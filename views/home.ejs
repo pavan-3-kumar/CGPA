@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            CGPA CALCULATOR
+        </title>
+        <style>
+            .first{
+                 display: flex; 
+   justify-content: center; 
+  align-items: center; 
+                position: relative;
+  /* padding: 30px; */
+ border: 2px solid;
+  /* margin-left: 25px; */
+  height: 200px;
+  width: 200px;
+  top:25%;
+  left: 40%;
+  margin: -25px 0 0 -25px;
+            }
+            .one{
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="first">
+        <form method="post" action="/details" >
+            
+            <select name="year" id="year" class="one">
+                <option hidden>select year</option>
+                <option value="0">first-year</option>
+                <option value="1">second-year</option>
+                <option value="2">third-year</option>
+                <option value="3">fourth-year</option>
+            </select>
+            
+            <select name="sem" id="sem" class="one">
+                <option hidden>select sem</option>
+                <option value="0">sem-1</option>
+                <option value="1">sem-2</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit"  class="one">GO</button>
+        </form>
+    </div>
+    </body>
+</html>

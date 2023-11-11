@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <title>
+      ENTER
+    </title>
+     <style>
+      .first{
+        display: flex; 
+   justify-content: center; 
+  align-items: center; 
+                position: relative;
+  /* padding: 30px; */
+ border: 2px solid;
+  /* margin-left: 25px; */
+  height: auto;
+  width: 250px;
+  top:15%;
+  left: 40%;
+  margin: -25px 0 0 -25px;
+          }
+      .one{
+           margin:20px;
+           }
+      .two{
+            margin-left:30%;
+           }
+     </style>
+  </head>
+  <body> 
+    <div name="view-subjects" class="first" >   
+    <form  method="POST" action="/result">
+          <% for(i=0 ; i < option1.length ; i++) { %>
+          <label for="<%= option1[i]%>" class="one"><%= option1[i] %> :</label>
+          <select name="<%= option1[i]%>" id="gpa" class="one">
+               <% for(const [key, value] of Object.entries(grades)) { %>
+                <option value="<%= value%>"><%= key %></option>
+                <% } %>
+           </select>
+            <br>
+          <% } %>
+          <button type="submit" class="two">SUBMIT</button>
+    </form>
+  </div>
+  </body>
+</html>
