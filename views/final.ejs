@@ -1,12 +1,7 @@
 <html>
     <head>
-        <title>
-            RESULT
-        </title>
+        <title>FINAL-RESULT</title>
         <style>
-            /* .first{
-            
-            } */
             .first{
                 /* display: flex;  */
    justify-content: center; 
@@ -23,24 +18,15 @@
    background-color: lightgray;
 }
 #cgpa{
-    margin-left : 30%;
+    margin-left : 40%;
+    margin-top: 25%;
 }
 
-#res{
-    margin-left: 15%;
-}
-            
         </style>
     </head>
     <body>
-        <!-- <div class="second"> -->
         <div class="first">
-        <h1 id="res">your reslut is <%= result%></h1>
-         <!-- </div> -->
-         <br>
-         <form action="/cgpa" method="POST">
-            <button id="cgpa">CALCULATE-CGPA</button>
-           </form> 
-        </div>
+        <h1 id ='cgpa'><%= final_result%></h1>
+    </div>
     </body>
 </html>
